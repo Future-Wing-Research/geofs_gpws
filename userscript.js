@@ -122,8 +122,66 @@ setTimeout((function() {
             }
             window.willTheDoorFallOff = window.geofs.aircraft.instance.aircraftRecord.name.includes("Boeing");
             window.isAsOldAsYourMom = window.geofs.aircraft.instance.aircraftRecord.name.includes("757") || window.geofs.aircraft.instance.aircraftRecord.name.includes("767") || window.geofs.aircraft.instance.aircraftRecord.name.includes("737-200") || window.geofs.aircraft.instance.aircraftRecord.name.includes("747-100");
-            window.russia = window.geofs.aircraft.instance.aircraftRecord.name.includes("Sukhoi") || window.geofs.aircraft.instance.aircraftRecord.name.includes("Antonov") || window.geofs.aircraft.instance.aircraftRecord.name.includes("Ilyushin") || window.geofs.aircraft.instance.aircraftRecord.name.includes("Tupolev") || window.geofs.aircraft.instance.aircraftRecord.name.includes("MiG");7
+            window.russia = window.geofs.aircraft.instance.aircraftRecord.name.includes("Ilyushin") || window.geofs.aircraft.instance.aircraftRecord.name.includes("Antonov") || window.geofs.aircraft.instance.aircraftRecord.name.includes("Sukhoi") || window.geofs.aircraft.instance.aircraftRecord.name.includes("Tupolev") || window.geofs.aircraft.instance.aircraftRecord.name.includes("MiG");
             if (window.russia && !window.russians){
+                window.a2500 = new Audio('https://anonmimi630-design.github.io/russian_gpws/2500.mp3', 4.0);
+                window.a2000 = new Audio('https://anonmimi630-design.github.io/russian_gpws/2000.mp3', 4.0);
+                window.a1000 = new Audio('https://anonmimi630-design.github.io/russian_gpws/1000.mp3', 4.0);
+                window.a500 = new Audio('https://anonmimi630-design.github.io/russian_gpws/500.mp3', 4.0);
+                window.a400 = new Audio('https://anonmimi630-design.github.io/russian_gpws/400.mp3', 4.0);
+                window.a300 = new Audio('https://anonmimi630-design.github.io/russian_gpws/300.mp3', 4.0);
+                window.a200 = new Audio('https://anonmimi630-design.github.io/russian_gpws/200.mp3', 4.0);
+                window.a100 = new Audio('https://anonmimi630-design.github.io/russian_gpws/100.mp3', 4.0);
+                window.a50 = new Audio('https://anonmimi630-design.github.io/russian_gpws/50.mp3', 4.0);
+                window.a40 = new Audio('https://anonmimi630-design.github.io/russian_gpws/40.mp3', 4.0);
+                window.a30 = new Audio('https://anonmimi630-design.github.io/russian_gpws/30.mp3', 4.0);
+                window.a20 = new Audio('https://anonmimi630-design.github.io/russian_gpws/20.mp3', 4.0);
+                window.a10 = new Audio('https://anonmimi630-design.github.io/russian_gpws/10.mp3', 4.0);
+                window.a5 = new Audio('https://anonmimi630-design.github.io/russian_gpws/5.mp3', 4.0);
+                window.aRetard = new Audio('https://anonmimi630-design.github.io/russian_gpws/retard.mp3', 4.0);
+                window.stall = new Audio('https://anonmimi630-design.github.io/russian_gpws/stall.mp3', 4.0);
+                window.glideSlope = new Audio('https://anonmimi630-design.github.io/russian_gpws/glide.mp3', 4.0);
+                window.tooLowFlaps = new Audio('https://anonmimi630-design.github.io/russian_gpws/flaps.mp3', 4.0);
+                window.tooLowGear = new Audio('https://anonmimi630-design.github.io/russian_gpws/gear.mp3', 4.0);
+                window.apDisconnect = new Audio('https://anonmimi630-design.github.io/russian_gpws/ap.mp3', 4.0);
+                window.minimumBaro = new Audio('https://anonmimi630-design.github.io/russian_gpws/minimums.mp3', 4.0);
+                window.dontSink = new Audio('https://anonmimi630-design.github.io/russian_gpws/pull.mp3', 4.0);
+                window.masterA = new Audio('https://anonmimi630-design.github.io/russian_gpws/master.mp3', 4.0);
+                window.bankAngle = new Audio('https://anonmimi630-design.github.io/russian_gpws/bank.mp3', 4.0);
+                window.overspeed = new Audio('https://anonmimi630-design.github.io/russian_gpws/overspeed.mp3', 4.0);
+                window.masterA.loop = true;
+                window.bankAngle.loop = true;
+                window.overspeed.loop = true;
+            } else if (window.russia && ! !window.vodka) {
+                window.a2500 = new Audio('https://anonmimi630-design.github.io/russian_gpws/2500.mp3', 4.0);
+                window.a2000 = new Audio('https://anonmimi630-design.github.io/russian_gpws/2000.mp3', 4.0);
+                window.a1000 = new Audio('https://anonmimi630-design.github.io/russian_gpws/1000.mp3', 4.0);
+                window.a500 = new Audio('https://anonmimi630-design.github.io/russian_gpws/500.mp3', 4.0);
+                window.a400 = new Audio('https://anonmimi630-design.github.io/russian_gpws/400.mp3', 4.0);
+                window.a300 = new Audio('https://anonmimi630-design.github.io/russian_gpws/300.mp3', 4.0);
+                window.a200 = new Audio('https://anonmimi630-design.github.io/russian_gpws/200.mp3', 4.0);
+                window.a100 = new Audio('https://anonmimi630-design.github.io/russian_gpws/100.mp3', 4.0);
+                window.a50 = new Audio('https://anonmimi630-design.github.io/russian_gpws/50.mp3', 4.0);
+                window.a40 = new Audio('https://anonmimi630-design.github.io/russian_gpws/40.mp3', 4.0);
+                window.a30 = new Audio('https://anonmimi630-design.github.io/russian_gpws/30.mp3', 4.0);
+                window.a20 = new Audio('https://anonmimi630-design.github.io/russian_gpws/20.mp3', 4.0);
+                window.a10 = new Audio('https://anonmimi630-design.github.io/russian_gpws/10.mp3', 4.0);
+                window.a5 = new Audio('https://anonmimi630-design.github.io/russian_gpws/5.mp3', 4.0);
+                window.aRetard = new Audio('https://anonmimi630-design.github.io/russian_gpws/retard.mp3', 4.0);
+                window.stall = new Audio('https://anonmimi630-design.github.io/russian_gpws/stall.mp3', 4.0);
+                window.glideSlope = new Audio('https://anonmimi630-design.github.io/russian_gpws/glide.mp3', 4.0);
+                window.tooLowFlaps = new Audio('https://anonmimi630-design.github.io/russian_gpws/flaps.mp3', 4.0);
+                window.tooLowGear = new Audio('https://anonmimi630-design.github.io/russian_gpws/gear.mp3', 4.0);
+                window.apDisconnect = new Audio('https://anonmimi630-design.github.io/russian_gpws/ap.mp3', 4.0);
+                window.minimumBaro = new Audio('https://anonmimi630-design.github.io/russian_gpws/minimums.mp3', 4.0);
+                window.dontSink = new Audio('https://anonmimi630-design.github.io/russian_gpws/pull.mp3', 4.0);
+                window.masterA = new Audio('https://anonmimi630-design.github.io/russian_gpws/master.mp3', 4.0);
+                window.bankAngle = new Audio('https://anonmimi630-design.github.io/russian_gpws/bank.mp3', 4.0);
+                window.overspeed = new Audio('https://anonmimi630-design.github.io/russian_gpws/overspeed.mp3', 4.0);
+                window.masterA.loop = true;
+                window.bankAngle.loop = true;
+                window.overspeed.loop = true;
+            } else if (window.vodka && !window.russians) {
                 window.a2500 = new Audio('https://anonmimi630-design.github.io/russian_gpws/2500.mp3', 4.0);
                 window.a2000 = new Audio('https://anonmimi630-design.github.io/russian_gpws/2000.mp3', 4.0);
                 window.a1000 = new Audio('https://anonmimi630-design.github.io/russian_gpws/1000.mp3', 4.0);
@@ -155,35 +213,6 @@ setTimeout((function() {
             } else if (window.isAsOldAsYourMom && !window.wasAsOldAsYourMom) {
                 window.a2500 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/b2500.wav');
                 window.a2000 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/b2000.wav');
-                window.a1000 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/o1000.wav');
-                window.a500 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/o500.wav');
-                window.a400 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/o400.wav');
-                window.a300 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/o300.wav');
-                window.a200 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/o200.wav');
-                window.a100 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/o100.wav');
-                window.a50 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/o50.wav');
-                window.a40 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/o40.wav');
-                window.a30 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/o30.wav');
-                window.a20 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/o20.wav');
-                window.a10 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/o10.wav');
-                window.a5 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/b5.wav');
-                window.aRetard = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/retard.wav');
-                window.stall = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bstall.wav');
-                window.glideSlope = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/oglideslope.wav');
-                window.tooLowFlaps = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/otoo-low_flaps.wav');
-                window.tooLowGear = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/otoo-low_gear.wav');
-                window.apDisconnect = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bap-disconnect.wav');
-                window.minimumBaro = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/ominimums.wav');
-                window.dontSink = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/odont-sink.wav');
-                window.masterA = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bmasterAlarm.wav');
-                window.bankAngle = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/obank-angle.wav');
-                window.overspeed = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/boverspeed.wav');
-                window.masterA.loop = true;
-                window.bankAngle.loop = true;
-                window.overspeed.loop = true;
-            } else if (window.willTheDoorFallOff && !window.didAWheelFall && !window.isAsOldAsYourMom) {
-                window.a2500 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/b2500.wav');
-                window.a2000 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/b2000.wav');
                 window.a1000 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/b1000.wav');
                 window.a500 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/b500.wav');
                 window.a400 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/b400.wav');
@@ -207,6 +236,35 @@ setTimeout((function() {
                 window.masterA = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bmasterAlarm.wav');
                 window.bankAngle = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bbank-angle.wav');
                 window.overspeed = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/boverspeed.wav');
+                window.masterA.loop = true;
+                window.bankAngle.loop = true;
+                window.overspeed.loop = true;
+            } else if (window.willTheDoorFallOff && !window.didAWheelFall && !window.isAsOldAsYourMom) {
+                window.a2500 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/2500.wav');
+                window.a2000 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/2000.wav');
+                window.a1000 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/1000.wav');
+                window.a500 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/500.wav');
+                window.a400 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/400.wav');
+                window.a300 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/300.wav');
+                window.a200 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/200.wav');
+                window.a100 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/100.wav');
+                window.a50 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/50.wav');
+                window.a40 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/40.wav');
+                window.a30 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/30.wav');
+                window.a20 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/20.wav');
+                window.a10 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/10.wav');
+                window.a5 = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/5.wav');
+                window.aRetard = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/retard.wav');
+                window.stall = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/stall.wav');
+                window.glideSlope = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/glideslope.wav');
+                window.tooLowFlaps = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/too-low_flaps.wav');
+                window.tooLowGear = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/too-low_gear.wav');
+                window.apDisconnect = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/ap-disconnect.wav');
+                window.minimumBaro = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/minimum.wav');
+                window.dontSink = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/dont-sink.wav');
+                window.masterA = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/masterAlarm.wav');
+                window.bankAngle = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/bank-angle.wav');
+                window.overspeed = new Audio('https://tylerbmusic.github.io/GPWS-files_geofs/overspeed.wav');
                 window.masterA.loop = true;
                 window.bankAngle.loop = true;
                 window.overspeed.loop = true;
@@ -239,7 +297,6 @@ setTimeout((function() {
                 window.masterA.loop = true;
                 window.bankAngle.loop = true;
                 window.overspeed.loop = true;
-            }
             // Retrieve and format the required values
             var minimum = ((document.getElementById("minimums") !== null) && document.getElementById("minimums").value !== undefined) ? Number(document.getElementById("minimums").value) : undefined;
             var agl = (window.geofs.animation.values.altitude !== undefined && window.geofs.animation.values.groundElevationFeet !== undefined) ? Math.round((window.geofs.animation.values.altitude - window.geofs.animation.values.groundElevationFeet) + (window.geofs.aircraft.instance.collisionPoints[window.geofs.aircraft.instance.collisionPoints.length - 2].worldPosition[2]*3.2808399)) : 'N/A';
@@ -425,13 +482,14 @@ setTimeout((function() {
             window.dontSink.pause();
             window.masterA.pause();
             window.bankAngle.pause();
-            window.overspeed.pau737-200;
+            window.overspeed.pause();
             window.justPaused = true;
         }
         window.wasAPOn = window.geofs.autopilot.on;
         window.didAWheelFall = window.willTheDoorFallOff;
-        window.wasAsOldAsYourMom = window.geofs.aircraft.instance.aircraftRecord.name.includes("757") || window.geofs.aircraft.instance.aircraftRecord.name.includes("767") || window.geofs.aircraft.instance.aircraftRecord.name.includes("737-200") || window.geofs.aircraft.instance.aircraftRecord.name.includes("747-100");
+        window.wasAsOldAsYourMom = window.geofs.aircraft.instance.aircraftRecord.name.includes("757") || indow.geofs.aircraft.instance.aircraftRecord.name.includes("767") || window.geofs.aircraft.instance.aircraftRecord.name.includes("737-200") || window.geofs.aircraft.instance.aircraftRecord.name.includes("747-100");
         window.russians = window.russia
+        window.vodka = window.russians
     }
 
     // Update flight data display every 100ms
